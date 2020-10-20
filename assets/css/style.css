@@ -1,0 +1,275 @@
+.sidebar-toggle:before {
+    content: '' !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.view_complaint, .edit_complaint, .print_complaint, .delete_complaint, .btn-action {
+    padding-right: 6px;
+}
+
+.btn-action-lg {
+    padding-right: 10px;
+}
+
+.controls .controls-add, .controls .controls-edit {
+    display: none;
+}
+
+.controls.edit .controls-save, .controls.edit .controls-view {
+    display: none;
+}
+
+.controls.edit .controls-edit {
+    display: block;
+}
+
+.controls.add .controls-edit, .controls.add .controls-view {
+    display: none;
+}
+
+.controls.add .controls-add {
+    display: block;
+}
+
+.icon-delete {
+    color: #dd4b39;
+}
+
+.icon-delete:hover {
+     color: #d33724;
+ }
+
+.dt-buttons {
+    float: left;
+}
+
+.select2, table {
+    width: 100% !important;
+}
+
+select[readonly].select2 + .select2-container {
+    pointer-events: none;
+    touch-action: none;
+}
+select[readonly].select2 + .select2-container .select2-selection {
+    background: #eee;
+    box-shadow: none;
+}
+select[readonly].select2 + .select2-container .select2-selection__arrow, select[readonly].select2 + .select2-container .select2-selection__clear {
+    display: none;
+}
+
+select.select2-custom-rendered + .select2-container--default .select2-selection--single, select.select2-custom-rendered + .select2-selection .select2-selection--single {
+    height: auto;
+}
+
+
+.select2-option-templated-user {
+    display: flex;
+    align-items: center;
+}
+
+.select2-selection__rendered .select2-option-templated-user {
+    margin-top: 4px;
+}
+
+.select2-option-templated-user .user-image {
+
+}
+.select2-option-templated-user .user-image .img-circle {
+    width: 45px;
+}
+.select2-option-templated-user .user-details {
+    padding-left: 6px;
+    word-wrap: anywhere;
+    line-height: 20px;
+}
+.select2-option-templated-user .user-details .name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+.select2-option-templated-user .user-details .email {
+    margin: 0;
+    font-size: 12px;
+}
+
+.select2-selection__rendered .select2-option-templated-location {
+    margin-top: 4px;
+}
+
+.select2-option-templated-location p {
+    margin: 0;
+}
+
+.select2-option-templated-location .location-row-1 {
+    position: relative;
+}
+
+.select2-option-templated-location .location-details {
+    line-height: 18px;
+}
+
+.select2-option-templated-location .district {
+    margin: 0;
+    font-size: 12px;
+}
+
+.select2-option-templated-location .name {
+    font-weight: bold;
+}
+
+.select2-option-templated-location .office-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.image-upload-info {
+    margin: 2px 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #df7d26;
+    line-height: 12px;
+}
+
+.account-image {
+    width: 100%;
+    position: relative;
+}
+
+.account-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.account-image .change-button {
+    position: absolute;
+    bottom: 0;
+    background: #040404;
+    opacity: 0.6;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+[data-action=view] .change-button {
+    display: none;
+}
+
+[data-action=edit] .on-action-edit {
+    display: block;
+}
+
+[data-action=edit] .on-action-view {
+    display: none;
+}
+
+[data-action=view] .on-action-view {
+    display: block;
+}
+
+[data-action=view] .on-action-edit {
+    display: none;
+}
+
+#btn-edit-ticket, #btn-save-ticket {
+    font-size: large;
+}
+
+table .img-circle {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+td.img-circle-td {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    width: 40px;
+}
+
+#loader-overlay {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height:100%;
+    display: none;
+    background: rgba(0,0,0,0.6);
+}
+.cv-spinner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px #ddd solid;
+    border-top: 4px #2e93e6 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.8s infinite linear;
+}
+@keyframes sp-anime {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.is-hide{
+    display:none;
+}
+
+
+.job_assignment_current_details td {
+    vertical-align: middle !important;
+}
+
+#local-video {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#remote-video, #remote-screen, #remote-picture {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    margin: 25px;
+}
+
+.capture-buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+.question-item {
+    padding: 5px
+}
+
+.question-item .question, .question-item .answer {
+    white-space: pre-line;
+}
+
+.pre-line {
+    white-space: pre-line !important;
+}
+
+.display-none {
+    display: none;
+}
