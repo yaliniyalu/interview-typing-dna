@@ -29,6 +29,10 @@ if (isset($_GET['timezone'])) {
     $_SESSION['timezone'] = $timezone;
     $_SESSION['timezone_offset'] = $timezone_offset;
 }
+else {
+    $timezone        = 'UTC';
+    $timezone_offset = 0;
+}
 
 date_default_timezone_set($timezone);
 $mysql->rawQuery("set time_zone = '" . $timezone_offset . "';");

@@ -56,7 +56,7 @@ elseif ($action === 'add') {
     $altBody = "Hello {$insert['name']}, Your application has been submitted. Goto this link to check status. " . $url;
 
     try {
-        sendMail(['name' => $insert['name'], 'email' => $insert['email']], $body, $altBody);
+        sendMail(['name' => $insert['name'], 'email' => $insert['email']], "Interview Application Status", $body, $altBody);
     } catch (\PHPMailer\PHPMailer\Exception $e) {
     }
 
@@ -328,7 +328,7 @@ elseif($action == 'email-send-code') {
                 ->insert('candidate_verifications', ['job_application_id' => $_POST['id'], 'type' => 'Email', 'data' => $code]);
 
     try {
-        sendMail(['name' => $application['name'], 'email' => $application['email']], $body, $altBody);
+        sendMail(['name' => $application['name'], 'email' => $application['email']], "Interview Email Verification", $body, $altBody);
     } catch (\PHPMailer\PHPMailer\Exception $e) {
         echo error_response("Unable to sent mail");
         exit;

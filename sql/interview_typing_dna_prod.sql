@@ -67,6 +67,17 @@ CREATE TABLE `interview_levels` (
   `is_active` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `interview_levels`
+--
+
+INSERT INTO `interview_levels` (`id`, `name`, `is_active`) VALUES
+(1, 'Initial Shortlisting', 1),
+(2, 'Online Skill Testing', 1),
+(3, 'Online Interview', 1),
+(4, 'Group Discussion', 1),
+(5, 'Final Interview', 1);
+
 -- --------------------------------------------------------
 
 --

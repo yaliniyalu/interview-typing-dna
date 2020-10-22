@@ -314,7 +314,7 @@ $color = get_application_status_color_codes()[get_context_value('status')] ?? 'd
                                                             <td>
                                                                 <label hidden for="id-input-scheduled-on"></label>
                                                                 <input type="text" class="form-control pull-right datepicker form-details" placeholder="Scheduled On" id="id-input-scheduled-on"
-                                                                       name="scheduled_date" value="<?= date('Y-m-d', strtotime($details['scheduled_date'])); ?>">
+                                                                       name="scheduled_date" value="<?= $details['scheduled_date'] ? date('Y-m-d', strtotime($details['scheduled_date'])) : ''; ?>">
                                                             </td>
                                                             <td>
                                                                 <label hidden for="id-input-assigned-to"></label>

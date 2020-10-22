@@ -9,11 +9,12 @@ require_once __DIR__ . '/api/PHPMailer/SMTP.php';
 
 /**
  * @param $to
+ * @param $subject
  * @param $body
  * @param string $alt_body
  * @throws Exception
  */
-function sendMail($to, $body, $alt_body = '') {
+function sendMail($to, $subject, $body, $alt_body = '') {
     $mail = new PHPMailer(true);
 
     $mail->isSMTP();
@@ -30,7 +31,7 @@ function sendMail($to, $body, $alt_body = '') {
 
     // Content
     $mail->isHTML(true);
-    $mail->Subject = '';
+    $mail->Subject = $subject;
     $mail->Body    = $body;
     $mail->AltBody = $alt_body;
 
